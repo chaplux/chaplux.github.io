@@ -10,7 +10,7 @@ tags: [Ubuntu, Nautilus,search]
 In ubuntu 18.04, search file using nautilus will bring up the result just on existing directory. If you want to search including sub directories you can change preferences as below.
 
 Open the dconf Editor Via 
-> Application > System Tools > dconf Editor.
+>Application > System Tools > dconf Editor.
 change recursive-search from 'local-only' to 'always'
 Find the recursive-search on this directory
-> org > gnome > nautilus > preferences > recursive-search
+>org > gnome > nautilus > preferences > recursive-search
