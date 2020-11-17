@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fix Nautilus Search Ubuntu 18.04
+title: Change Nautilus Search on Ubuntu 18.04
 date: 2020-11-17 10:45:52 +0300
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.
 img: Chaplux_Nautilus_Search0.png # Add image post (optional)
