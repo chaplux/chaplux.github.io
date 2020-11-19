@@ -14,7 +14,8 @@ I have a bash script to convert a PDF to an image using Image Magick. But ImageM
 The restricted policy is made to prevent unknown vulnerabilities coming from third party software as Ghostscript used here for PDF files. Be sure to update Ghostscript.
 
 To re enable find the line below
-{% raw %}
- <policy domain="coder" rights="none" pattern="PDF" /> and replace "none" by "read|write" in /etc/ImageMagick-6/policy.xml
-{% endraw %}
+
+>policy domain="coder" rights="none" pattern="PDF" and replace "none" by "read|write"
+in /etc/ImageMagick-6/policy.xml
+
 
