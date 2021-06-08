@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ssh-jump-hosts
+title: Remote Using SSH Jump Host
 date: 2020-12-06 12:45:52 +0300
 img: Chaplux_sshjumphost.png # Add image post (optional)
 tags: [SSH, Tunnel, Browser, Terminal]
