@@ -13,24 +13,25 @@ Add service on systemd
 
 Add this file
 > [Unit]
-> 
+ 
 > Description=x11vnc service
-> 
+ 
 > After=display-manager.service network.target syslog.target
 
+
 > [Service]
-> 
- Type=simple
  
- ExecStart=/usr/bin/x11vnc -forever -display :0 -auth guess -passwd YOURPASSWD
+> Type=simple
  
- ExecStop=/usr/bin/killall x11vnc
+> ExecStart=/usr/bin/x11vnc -forever -display :0 -auth guess -passwd YOURPASSWD
  
- Restart=on-failure
+> ExecStop=/usr/bin/killall x11vnc
+ 
+> Restart=on-failure
  
 
 > [Install]
-> 
+ 
 > WantedBy=multi-user.target
 
 Reload service on systemd daemon
