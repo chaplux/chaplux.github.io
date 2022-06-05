@@ -10,18 +10,19 @@ Install x11vnc
 
 Add service on systemd
 > sudo nano /lib/systemd/system/x11vnc.service
-[Unit]
-Description=x11vnc service
-After=display-manager.service network.target syslog.target
+Add this file
+> [Unit]
+> Description=x11vnc service
+> After=display-manager.service network.target syslog.target
 
-[Service]
-Type=simple
-ExecStart=/usr/bin/x11vnc -forever -display :0 -auth guess -passwd YOURPASSWD
-ExecStop=/usr/bin/killall x11vnc
-Restart=on-failure
+> [Service]
+> Type=simple
+> ExecStart=/usr/bin/x11vnc -forever -display :0 -auth guess -passwd YOURPASSWD
+> ExecStop=/usr/bin/killall x11vnc
+> Restart=on-failure
 
-[Install]
-WantedBy=multi-user.target
+> [Install]
+> WantedBy=multi-user.target
 
 Reload service on systemd daemon
 > systemctl daemon-reload
