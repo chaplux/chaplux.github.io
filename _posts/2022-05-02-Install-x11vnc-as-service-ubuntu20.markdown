@@ -22,11 +22,11 @@ Add this file
 > [Service]
  
 > Type=simple
- 
+
 > ExecStart=/usr/bin/x11vnc -forever -display :0 -auth guess -passwd YOURPASSWD
- 
+
 > ExecStop=/usr/bin/killall x11vnc
- 
+
 > Restart=on-failure
  
 
