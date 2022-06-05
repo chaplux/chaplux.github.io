@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Install x11vnc as service on Ubuntu 20.04
-date: 2022-06-03 10:32:52 +0700
+date: 2022-06-03 10:32:52 +0300
 img: Chaplux_x11vnc.png # Add image post (optional)
 tags: [Ubuntu 20.04, Remote Desktop, x11vnc, Terminal]
 ---
